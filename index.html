@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>আমার ময়নার স্মৃতিচিঠি</title>
+  <meta name="description" content="একটি আবেগঘন স্মৃতির পাতা ও না বলা ভালোবাসার চিঠি সংগ্রহ — রাতুল ও তার ময়না পাখির স্মৃতি।" />
+  <meta property="og:title" content="আমার ময়নার স্মৃতিচিঠি" />
+  <meta property="og:description" content="একটি আবেগঘন স্মৃতির পাতা ও না বলা ভালোবাসার চিঠি সংগ্রহ — রাতুল ও তার ময়না পাখির স্মৃতি।" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#fbf6ee" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#memories">মূল অংশে যান</a>
+
+  <!-- Floating petals animation -->
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#home" aria-label="শুরুতে ফিরে যান">
+        <span class="flower" aria-hidden="true">❀</span>
+        <span>ময়নার স্মৃতির ডায়েরি</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__links" id="navLinks" aria-label="প্রধান মেনু">
+        <a href="#home">Home</a>
+        <a href="#memories">Timeline</a>
+        <a href="#letters">Letters</a>
+        <a href="#poem-spotlight">Poem</a>
+        <a href="#special">Memories</a>
+        <a href="#last-letter">Last Letter</a>
+        <a href="#farewell">Farewell</a>
+      </nav>
+
+    </div>
+    <div class="nav__progress" id="pageProgress" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="hero__inner reveal">
+        <span class="flower" aria-hidden="true">✿</span>
+        <h1 id="heroTitle" class="hero__title">আমার ময়নার জন্য কিছু না বলা কথা</h1>
+        <p class="hero__subtitle">কিছু গল্প শেষ হয়ে গেলেও, কিছু অনুভূতি সারাজীবন বেঁচে থাকে।</p>
+        <p class="stamp"><span>১০ এপ্রিল ২০২৫</span> <i aria-hidden="true">→</i> <span>২০২৬</span></p>
+        <p class="hand hero__hand">"কিছু মানুষ জীবনে থেকে যায় না, কিন্তু হৃদয়ের প্রতিটি স্পন্দনে আর স্মৃতির পাতায় আজীবন থেকে যায়।"</p>
+        <button class="btn btn--primary" id="enterBtn" type="button">স্মৃতিগুলো স্পর্শ করুন 🕊️</button>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 2. TIMELINE ============ -->
+    <section class="section" id="memories" aria-labelledby="memTitle">
+      <header class="section__head reveal">
+        <p class="eyebrow">Memory Timeline</p>
+        <h2 id="memTitle">স্মৃতির অমূল্য পাতা</h2>
+        <p class="section__sub">৭ই এপ্রিলের প্রথম বার্তা থেকে বিদায়ের শেষ প্রহর পর্যন্ত প্রতিটি মুহূর্ত</p>
+        <div class="divider" aria-hidden="true"><span>❀</span></div>
+      </header>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- ============ 3. LETTERS ============ -->
+    <section class="section section--tint" id="letters" aria-labelledby="letTitle">
+      <header class="section__head reveal">
+        <p class="eyebrow">Letters of Love & Sorrow</p>
+        <h2 id="letTitle">চিঠির সংগ্রহ</h2>
+        <p class="section__sub">জন্মদিন, থার্টি ফার্স্ট নাইট, ৮ মাস ও ১ বছর পূর্তির না-বলা ভালোবাসার চিঠি</p>
+        <div class="divider" aria-hidden="true"><span>❀</span></div>
+      </header>
+      <div class="letter-grid" id="letterGrid"></div>
+    </section>
+
+    <!-- ============ 4. POEM SPOTLIGHT ============ -->
+    <section class="section" id="poem-spotlight" aria-labelledby="poemTitle">
+      <header class="section__head reveal">
+        <p class="eyebrow">A Bittersweet Poem</p>
+        <h2 id="poemTitle">তোমার জন্য লেখা একটি কবিতা</h2>
+        <div class="divider" aria-hidden="true"><span>❀</span></div>
+      </header>
+      <div class="poem-box reveal">
+        <p>শান্তিতে ঘুমাইয়ো তুমি
+আর হবে না দেখা!
+পথের কাটা তুইলা নিলাম!
+রাস্তা তোমার ফাকা
+
+যে যাই বলুক কান দিওনা
+দেখিও তোমার দিন!
+লিখে রেখো এই আমার কথা
+তোমার মনে পড়বেই একদিন!
+🫂😅🥹❤️🩹</p>
+        <p class="hand" style="text-align: right; margin-top: 1.2rem; font-size: 1.1rem; color: var(--ink-soft);">— তোমার রাতুল</p>
+      </div>
+    </section>
+
+    <!-- ============ 5. SPECIAL MEMORIES ============ -->
+    <section class="section section--tint" id="special" aria-labelledby="spTitle">
+      <header class="section__head reveal">
+        <p class="eyebrow">Unforgettable Moments</p>
+        <h2 id="spTitle">যে স্মৃতিগুলো কখনো মুছে যাবে না</h2>
+        <p class="section__sub">ছোট ছোট খুনসুটি, রাগ-অভিমান আর প্রথম দেখার মায়াবী স্মৃতি</p>
+        <div class="divider" aria-hidden="true"><span>❀</span></div>
+      </header>
+      <div class="special-grid" id="specialGrid"></div>
+    </section>
+
+    <!-- ============ 6. COUNTERS ============ -->
+    <section class="section" id="numbers" aria-labelledby="numTitle">
+      <header class="section__head reveal">
+        <p class="eyebrow">Relation Days & Eternal Love</p>
+        <h2 id="numTitle">আমাদের সম্পর্কের দিন ও ভালোবাসার সময়</h2>
+        <p class="section__sub">১০ এপ্রিল ২০২৫ থেকে দূরত্বের ক্ষণ এবং মৃত্যুর আগের মুহূর্ত পর্যন্ত অবিরাম ভালোবাসার জীবন্ত ঘড়ি</p>
+        <div class="divider" aria-hidden="true"><span>❀</span></div>
+      </header>
+      <div class="counters" id="counters"></div>
+    </section>
+
+    <!-- ============ 7. THE LAST LETTER ============ -->
+    <section class="last" id="last-letter" aria-labelledby="lastTitle">
+      <div class="last__wrap reveal">
+        <p class="eyebrow">The Final Goodbye</p>
+        <h2 id="lastTitle" class="last__title">শেষ চিঠি</h2>
+        <p class="last__sub">টাকার কাছে হেরে যাওয়া, চোখের জলের অভিশাপ আর না-ফেরার দেশের ডাক...</p>
+
+        <article class="last-card">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="quote quote--open" aria-hidden="true">“</span>
+          <p class="last-card__line hand">"চিরো বিদায় আমার না পাওয়া ফুল... হয়তো সময় আমাদের আলাদা করেছে, কিন্তু মন আলাদা করতে পারে নাই।"</p>
+          <button class="btn btn--gold" id="openLast" type="button">শেষ চিঠিটি খুলুন 🕊️</button>
+          <span class="quote quote--close" aria-hidden="true">”</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 8. FAREWELL ============ -->
+    <section class="farewell" id="farewell" aria-labelledby="fwTitle">
+      <div class="farewell__inner reveal">
+        <span class="flower" aria-hidden="true">✿</span>
+        <h2 id="fwTitle">সব গল্পের শেষ একরকম হয় না।</h2>
+        <p class="farewell__text">
+          কিছু মানুষ আমাদের জীবনের অংশ হয়ে থাকে,<br>
+          আর কিছু মানুষ আমাদের জীবনের এক অবিস্মরণীয় অধ্যায় হয়ে যায়।<br>
+          অধ্যায় শেষ হলেও মায়াবী স্মৃতিগুলো হৃদয়ে আজীবন ধুকপুক করে।
+        </p>
+        <p class="hand farewell__care">নিজের যত্ন নিও পাখি... ঠিকমতো খাওয়া দাওয়া করো।</p>
+        <p class="farewell__text">
+          দূরত্ব হয়তো দুটো মানুষকে আলাদা করতে পারে,<br>
+          কিন্তু একল কোটি চাঁদের থেকেও সুন্দর স্মৃতিগুলোকে কখনো মুছে দিতে পারে না।
+        </p>
+        <p class="signature hand">
+          ইতি,<br>
+          তোমার ময়না<br>
+          <strong>রাতুল ✍️👦</strong>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>রাতুল ও তার ময়না পাখির স্মৃতির আর্কাইভ &middot; <span aria-hidden="true">❀</span></p>
+  </footer>
+
+  <!-- ============ LETTER READER MODAL ============ -->
+  <div class="reader" id="reader" role="dialog" aria-modal="true" aria-labelledby="readerTitle" hidden>
+    <div class="reader__backdrop" data-close></div>
+    <div class="reader__sheet" id="readerSheet">
+      <div class="reader__bar">
+        <div class="reader__progress" aria-hidden="true"><i id="readerProgress"></i></div>
+        <button class="icon-btn" id="readerClose" type="button" aria-label="চিঠি বন্ধ করুন">✕</button>
+      </div>
+      <div class="reader__scroll" id="readerScroll" tabindex="0">
+        <article class="paper">
+          <span class="clip" aria-hidden="true"></span>
+          <p class="stamp stamp--small" id="readerDate"></p>
+          <h3 id="readerTitle" class="paper__title"></h3>
+          <div class="divider" aria-hidden="true"><span>❀</span></div>
+          <div class="paper__body" id="readerBody"></div>
+          <p class="paper__sign hand" id="readerSign"></p>
+        </article>
+      </div>
+      <div class="reader__nav">
+        <button class="btn btn--ghost" id="prevLetter" type="button">← আগের চিঠি</button>
+        <span class="reader__count" id="readerCount" aria-live="polite"></span>
+        <button class="btn btn--ghost" id="nextLetter" type="button">পরের চিঠি →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ THE LAST LETTER OVERLAY ============ -->
+  <div class="veil" id="veil" role="dialog" aria-modal="true" aria-labelledby="veilTitle" hidden>
+    <div class="veil__dust" id="veilDust" aria-hidden="true"></div>
+    <div class="veil__sheet" id="veilSheet">
+      <button class="icon-btn veil__close" id="veilClose" type="button" aria-label="চিঠি বন্ধ করুন">✕</button>
+      <div class="veil__scroll" id="veilScroll" tabindex="0">
+        <article class="paper paper--gold">
+          <span class="quote quote--open" aria-hidden="true">“</span>
+          <h3 id="veilTitle" class="paper__title">শেষ চিঠি</h3>
+          <p class="stamp stamp--small" id="veilDate"></p>
+          <div class="divider" aria-hidden="true"><span>❀</span></div>
+          <div class="paper__body" id="veilBody" aria-live="off"></div>
+          <p class="paper__sign hand" id="veilSign" hidden></p>
+          <button class="btn btn--ghost veil__skip" id="veilSkip" type="button">পুরোটা একসাথে দেখুন</button>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "আমার ময়নার স্মৃতিচিঠি",
+  "description": "একটি আবেগঘন স্মৃতির পাতা ও না বলা ভালোবাসার চিঠি সংগ্রহ — রাতুল ও তার ময়না পাখির স্মৃতি।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
